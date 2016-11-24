@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label for="param_home_1">home/</label>
+        <input id="param_home_1" type="text" value="" name="database" placeholder="Database"/>            
+        <input type="button" value="request" onclick="javascript:request_home();"/>
+        
+        <script>
+            function request_home(){
+                var param_home_1 = document.getElementById("param_home_1");
+                var url = window.location.href + "home/" + param_home_1.value;
+                window.location.href = url;
+            }
+        </script>        
+    </body>   
+</html>
